@@ -1,0 +1,73 @@
+/*
+Colors used:
+Color 1 (Dark Blue): rgba(0,7,143,1);
+Color 2 (Light Blue): rgba(0,124,187,1);
+Color 3 (Black): rgba(0,0,0,1);
+Color 4 (Medium Gray): rgba(150,150,150,1);
+Color 5 (White): rgba(255,255,255,1);
+*/
+
+body {background-color: rgba(255,255,255);}
+body {font-family: 'Open Sans', sans-serif;}
+body {
+  background-color: rgba (255,255,255);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: rgba(0,0,0,1);}
+
+h1, h2, h3, h4 {line-height: 1.4;}
+h1 {font-size: 2.75em; font-weight: 700;}
+h2 {font-size: 2.25em; font-weight: 700;}
+h3 {font-size: 1.75em; font-weight: 400;}
+h4 {font-size: 1.35em; font-weight: 400;}
+
+img {width: 100%;}
+
+a {
+  color: rgba(0,7,143,1);
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: rgba(0,124,187,1);
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited { /* visited link */
+  color: rgba(0,7,143,0.5);
+}
+a:active { /* selected link */
+  color: rgba(0,124,187,1);
+}
+
+a:hover,
+a:focus {
+  color: rgba(0,124,187,1);
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: rgba(0,124,187,0.5);
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0,124,187,1); /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.7; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: rgba(0,124,187,1);
+  text-transform: uppercase;
+  border: 2px solid rgba(0,124,187,0.5);
+}
+.button.contact:hover {
+  background-color: rgba(0,124,187,0.5);
+  color: #ffffff;
+}
