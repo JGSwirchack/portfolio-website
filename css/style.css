@@ -9,6 +9,7 @@ Color 5 (White): rgba(255,255,255,1);
 * {
   box-sizing: border-box;
 }
+
 header {
   background-color: rgba(150, 150, 150, 1);
   text-align: unset;
@@ -22,9 +23,11 @@ header {
   position: fixed;
   width: 100%;
 }
-#logo img{
+
+#logo img {
   max-width: 200px;
 }
+
 main {
   padding-top: 180px;
   display: fixed;
@@ -149,24 +152,30 @@ a:focus {
   text-align: center;
   /* Centers text */
 }
+
 #work h2 {
   text-align: center;
 }
+
 #contact p {
   text-align: center;
 }
+
 #mystory h2 {
   text-align: center;
 }
+
 #aboutme h1 {
   text-align: center;
 }
+
 #contact h2 {
   text-align: center;
 }
 
-  /* Centers text */
+/* Centers text */
 }
+
 .center {
   text-align: center;
 }
@@ -200,6 +209,7 @@ nav>ul>li>a {
 #hero {
   background-color: rgba(150, 150, 150, 1);
 }
+
 #hero {
   background-color: rgba(150, 150, 150, 1);
   padding: 50px 0;
@@ -207,6 +217,7 @@ nav>ul>li>a {
   width: 100%;
   text-align: center;
 }
+
 #hero span {
   display: block;
 }
@@ -215,6 +226,7 @@ nav>ul>li>a {
 .social a {
   text-align: center;
 }
+
 .social a {
   display: inline-block;
   width: 100px;
@@ -223,11 +235,11 @@ nav>ul>li>a {
   border: 1px;
   margin: 0 5px;
 }
-.social svg {
-  width:50px;
-  height:50px;
-}
 
+.social svg {
+  width: 50px;
+  height: 50px;
+}
 
 /* Screen Breakpoints */
 /* ==============================
@@ -244,16 +256,18 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-  #about-page h3 { margin-top: 0;}
+
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
 
 /* Media Query */
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-}
+@media only screen and (min-width: 1024px) {}
+
 * {
   box-sizing: border-box;
 }
@@ -276,18 +290,54 @@ Large devices (1024px or larger)
   padding: 15px;
   border: 1px solid red;
 }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
 
 [class*="col-"] {
   float: left;
@@ -304,23 +354,22 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-}
-
+@media only screen and (min-width: 1920px) {}
 
 .col-md-6 {
   width: 50%;
 }
+
 [class*="col-"] {
   float: left;
   padding: 10px
 }
+
 .row::after {
   content: "";
   clear: both;
