@@ -185,7 +185,7 @@ a:focus {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 1200px;
 }
 
 /* Navigation Bar */
@@ -203,6 +203,9 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 600;
   color: rgba(0, 124, 187, 1);
+}
+#logo {
+  text-align: center;
 }
 
 /* Hero */
@@ -266,7 +269,7 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
 
 * {
   box-sizing: border-box;
@@ -350,16 +353,18 @@ Large devices (1024px or larger)
   clear: both;
   display: table;
 }
-
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+
+}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 1920px) {
 
 .col-md-6 {
   width: 50%;
@@ -374,4 +379,5 @@ Extra-large devices (1920px or larger)
   content: "";
   clear: both;
   display: table;
+}
 }
