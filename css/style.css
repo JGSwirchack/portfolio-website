@@ -12,7 +12,7 @@ Color 5 (White): rgba(255,255,255,1);
 
 header {
   background-color: rgba(150, 150, 150, 1);
-  text-align: center;
+
   padding: 10px 5px 15px 5px;
   /* Adds 10px top, 5px right, 15px bottom, 5px left */
   margin: 0px;
@@ -192,14 +192,47 @@ a:focus {
 }
 
 /* Navigation Bar */
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
+/*nav>ul>li {
   display: inline-block;
-}
+}*/
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -248,14 +281,24 @@ nav>ul>li>a {
   height: 50px;
 }
 
+/* Media Query */
 /* Screen Breakpoints */
 /* ==============================
-Medium devices (640px and larger)
+Medium devices (641px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 10px 0 4px;
   }
 
   nav {
@@ -304,6 +347,14 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   * {
     box-sizing: border-box;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .container {
@@ -396,10 +447,22 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .col-md-6 {
     width: 50%;
   }
