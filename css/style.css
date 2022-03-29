@@ -27,7 +27,7 @@ header {
 }
 
 main {
-  padding-top: 180px;
+  padding-top: 60px;
   display: block;
 }
 
@@ -88,11 +88,11 @@ a {
 
 a:visited {
   /* visited link */
-  color: rgba(0, 7, 143, 0.5);
+  color: rgba(255,255,255,1);
 }
 
 a:hover {
-  color: rgba(0, 124, 187, 1);
+  color: rgba(0,0,0,1);
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -192,24 +192,21 @@ a:focus {
 }
 
 /* Navigation Bar */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(0,0,0,1);
 }
 
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
-}
-.navtoggle.responsive li  {
-  display: block;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -288,6 +285,15 @@ Medium devices (641px and larger)
 ================================= */
 @media only screen and (min-width: 641px) {
 
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
   nav > ul {
     margin: 1em 0;
   }
@@ -298,7 +304,7 @@ Medium devices (641px and larger)
 
   header {
     text-align: unset;
-    padding: 10px 0 4px;
+    padding: 22px 0 8px;
   }
 
   nav {
@@ -347,14 +353,6 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   * {
     box-sizing: border-box;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
   }
 
   .container {
@@ -447,21 +445,11 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
 
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
 
   .col-md-6 {
     width: 50%;
