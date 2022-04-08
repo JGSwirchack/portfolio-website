@@ -88,7 +88,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: rgba(255,255,255,1);
+  color: rgba(0,7,143,1);
 }
 
 a:hover {
@@ -130,10 +130,17 @@ a:focus {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: rgba(0, 124, 187, 1);
+  background-color: rgba(0, 124, 187, 0.5);
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 400;
+  text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid rgba(0, 124, 187, 0.5);
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 124, 187, 1);
+  /* width of the border, type, color */
+  transition: .2s opacity;
 }
 
 .button.contact:hover {
@@ -249,7 +256,7 @@ nav>ul>li>a {
 
 #hero {
   background-color: rgba(150, 150, 150, 1);
-  padding: 50px 0;
+  padding: 50px 20;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -310,7 +317,7 @@ Medium devices (641px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 5px;
   }
 
   #logo {
